@@ -1,4 +1,4 @@
 {
-    "personalAPIKey": "0C4A7A684F3920B5D0FE983E9E369D18",
-    "description": "Die API bedarf eines persönlichen Steam Keys. In Folge, dass die API funktioniert stelle ich meinen privaten Key zur Verfügung."
+    "personalApiKey": "TRGUYRPZZGZX8EA8",
+    "description": "Die API bedarf eines persönlichen Keys. In Folge, dass die API funktioniert stelle ich meinen privaten Key zur Verfügung. Die API erlaubt aber nur eine begrenzte Anzahl an Abfragen im Monat."
 }

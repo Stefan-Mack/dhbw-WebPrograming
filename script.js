@@ -1,21 +1,26 @@
 // TODO
-// start fetching json, when html-website is fully loaded
-window.onload = function(){
+// start fetching json, when html-website is fully loaded  https://www.steamwebapi.com/steam/api/items?key=TRGUYRPZZGZX8EA8&page=1&max=10
+window.onload = function () {
     initJson()
 }
 
-function initJson(pageNumber = 1){
-    fetch("output.json") // pageNumber
+function initJson(pageNumber = 1) {
+    fetch("APIKey.json")
         .then(res => res.json())
         .then(data => {
-            jsonValueMapping(data, pageNumber);
-        });
+            fetch(`https://www.steamwebapi.com/steam/api/items?key=${data.personalApiKey}=${pageNumber}&max=10`) // pageNumber
+                .then(res => res.json())
+                .then(data => {
+                    jsonValueMapping(data, pageNumber);
+                });
+        })
 }
 
-function jsonValueMapping(initilaziedJson , pageNumber){
+function jsonValueMapping(initilaziedJson, pageNumber) {
     console.log(initilaziedJson)
     console.log(initilaziedJson[1].length)
     let contentContainer = document.getElementById("api-content")
+    contentContainer.innerHTML = "" // clear all inside, especially when next page is generated 
     for (let i = 0; i < initilaziedJson.length; i++) {
         let tempRow = entryConstructor(
             initilaziedJson[i].itemimage,
@@ -26,15 +31,15 @@ function jsonValueMapping(initilaziedJson , pageNumber){
             initilaziedJson[i].pricelatest,
             initilaziedJson[i].detailUrl,
             initilaziedJson[i].rarity
-            );
-            contentContainer.appendChild(tempRow);
-      }
+        );
+        contentContainer.appendChild(tempRow);
+    }
     let pageDisplay = document.getElementById("currentSiteNumber");
     pageDisplay.setAttribute("placeholder", pageNumber)
     console.log(contentContainer)
 }
 
-function previousPage(){
+function previousPage() {
     let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder")
     currentPage = parseInt(currentPage)
     if (currentPage != 1) {
@@ -42,7 +47,7 @@ function previousPage(){
     }
 }
 
-function nextPage(){
+function nextPage() {
     let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder")
     currentPage = parseInt(currentPage)
     initJson(currentPage + 1)
@@ -103,14 +108,14 @@ function entryConstructor(pictureUrl, weaponName, skinName, wear, avgSold, price
 
 
     // now all elements get attached to the row
-   row.appendChild(pictureDiv);
-   row.appendChild(nameDiv);
-   row.appendChild(skinDiv);
-   row.appendChild(spaceDiv);
-   row.appendChild(wearDiv);
-   row.appendChild(offerVolDiv);
-   row.appendChild(priceDiv);
-   row.appendChild(detailsDiv);
+    row.appendChild(pictureDiv);
+    row.appendChild(nameDiv);
+    row.appendChild(skinDiv);
+    row.appendChild(spaceDiv);
+    row.appendChild(wearDiv);
+    row.appendChild(offerVolDiv);
+    row.appendChild(priceDiv);
+    row.appendChild(detailsDiv);
 
     return row
 
