@@ -4,35 +4,52 @@ window.onload = function(){
     initJson()
 }
 
-function initJson(){
-    fetch("test.json")
+function initJson(pageNumber = 1){
+    fetch("output.json") // pageNumber
         .then(res => res.json())
         .then(data => {
-            jsonValueMapping(data);
+            jsonValueMapping(data, pageNumber);
         });
 }
 
-function jsonValueMapping(initilaziedJson){
+function jsonValueMapping(initilaziedJson , pageNumber){
     console.log(initilaziedJson)
-    console.log(initilaziedJson.entries[1].avgSold)
+    console.log(initilaziedJson[1].length)
     let contentContainer = document.getElementById("api-content")
-    for (let i = 0; i < initilaziedJson.entries.length; i++) {
+    for (let i = 0; i < initilaziedJson.length; i++) {
         let tempRow = entryConstructor(
-            initilaziedJson.entries[i].pictureUrl,
-            initilaziedJson.entries[i].weaponName,
-            initilaziedJson.entries[i].skinName,
-            initilaziedJson.entries[i].condition,
-            initilaziedJson.entries[i].avgSold,
-            initilaziedJson.entries[i].price,
-            initilaziedJson.entries[i].detailUrl
+            initilaziedJson[i].itemimage,
+            initilaziedJson[i].itemtype,
+            initilaziedJson[i].marketname,
+            initilaziedJson[i].wear,
+            initilaziedJson[i].offervolume,
+            initilaziedJson[i].pricelatest,
+            initilaziedJson[i].detailUrl,
+            initilaziedJson[i].rarity
             );
             contentContainer.appendChild(tempRow);
       }
+    let pageDisplay = document.getElementById("currentSiteNumber");
+    pageDisplay.setAttribute("placeholder", pageNumber)
     console.log(contentContainer)
 }
 
+function previousPage(){
+    let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder")
+    currentPage = parseInt(currentPage)
+    if (currentPage != 1) {
+        initJson(currentPage - 1)
+    }
+}
 
-function entryConstructor(pictureUrl, weaponName, skinName, condition, avgSold, price, detailUrl) { // detailUrl oder Id
+function nextPage(){
+    let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder")
+    currentPage = parseInt(currentPage)
+    initJson(currentPage + 1)
+}
+
+
+function entryConstructor(pictureUrl, weaponName, skinName, wear, avgSold, price, detailUrl, rarity) { // detailUrl oder Id
 
     // creating rows, that can be filled later with data
     let row = document.createElement("div");
@@ -45,6 +62,7 @@ function entryConstructor(pictureUrl, weaponName, skinName, condition, avgSold, 
     pictureImg.setAttribute("alt", `picture of the weapon ${weaponName} with the Skin ${skinName}`);
     pictureImg.setAttribute("height", "auto");
     pictureImg.setAttribute("width", "100%");
+    pictureImg.setAttribute("class", rarity)
     let pictureDiv = document.createElement("div");
     pictureDiv.setAttribute("class", "col-1");
     pictureDiv.appendChild(pictureImg);
@@ -64,19 +82,19 @@ function entryConstructor(pictureUrl, weaponName, skinName, condition, avgSold, 
     spaceDiv.setAttribute("class", "col-3");
 
     // 5th column is the skin condition
-    let conditionDiv = document.createElement("div");
-    conditionDiv.setAttribute("class", "col-1");
-    conditionDiv.innerHTML = `<h6>${condition}</h6>`
+    let wearDiv = document.createElement("div");
+    wearDiv.setAttribute("class", "col-1");
+    wearDiv.innerHTML = `<h6>${wear}</h6>`
 
     // 6th column is the skin condition
-    let avgSoldDiv = document.createElement("div");
-    avgSoldDiv.setAttribute("class", "col-1");
-    avgSoldDiv.innerHTML = `<h6>${avgSold}</h6>`
+    let offerVolDiv = document.createElement("div");
+    offerVolDiv.setAttribute("class", "col-1");
+    offerVolDiv.innerHTML = `<h6>${avgSold} St</h6>`
 
     // 7th column is the skin condition
     let priceDiv = document.createElement("div");
     priceDiv.setAttribute("class", "col-1");
-    priceDiv.innerHTML = `<h6>${price}</h6>`
+    priceDiv.innerHTML = `<h6>${price} €</h6>`
 
     // 8th column is the skin condition
     let detailsDiv = document.createElement("div");
@@ -89,8 +107,8 @@ function entryConstructor(pictureUrl, weaponName, skinName, condition, avgSold, 
    row.appendChild(nameDiv);
    row.appendChild(skinDiv);
    row.appendChild(spaceDiv);
-   row.appendChild(conditionDiv);
-   row.appendChild(avgSoldDiv);
+   row.appendChild(wearDiv);
+   row.appendChild(offerVolDiv);
    row.appendChild(priceDiv);
    row.appendChild(detailsDiv);
 

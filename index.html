@@ -92,7 +92,7 @@
                     float
                 </div>
                 <div class="col-1">
-                    avg. sold
+                    offervolume
                 </div>
                 <div class="col-1">
                     Price
@@ -102,13 +102,18 @@
                 </div>
             </div>
         </div>
+        <div class="text-center mt-2 mb-4">
+            <button type="button" class="btn btn-dark" onclick="previousPage()">Zurück</button>
+            <input type="number" disabled id="currentSiteNumber">
+            <button type="button" class="btn btn-dark" onclick="nextPage()">Nächstes</button>
+        </div>
         <!-- TODO: Button to control pages -->
     </section>
 
 
     <!-- Footersection TODO -->
     <div class="container-fluid bg-dark" id="footer">
-        <footer class="py-3 mt-2">
+        <footer class="py-1 mt-2">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
@@ -127,38 +132,3 @@
     crossorigin="anonymous"></script>
 
 </html>
-
-
-<!-- 
-    Sample
-
-<div class="container text-center">
-
- <div class="row">
-                <div class="col-1">
-                    picture
-                </div>
-                <div class="col-1">
-                    Name
-                </div>
-                <div class="col-3">
-                    Skin
-                </div>
-                <div class="col-3">
-                </div>
-                <div class="col-1">
-                    float
-                </div>
-                <div class="col-1">
-                    avg. sold
-                </div>
-                <div class="col-1">
-                    Price
-                </div>
-                <div class="col-1">
-                    Details
-                </div>
-            </div>
-</div> 
-
--->
