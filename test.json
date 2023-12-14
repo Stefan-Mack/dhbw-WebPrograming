@@ -1,0 +1,22 @@
+{
+    "entries": [
+        {
+            "pictureUrl": "https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5lpKKqPrxN7LEm1Rd6dd2j6eQ9N2t2wK3-ENsZ23wcIKRdQE2NwyD_FK_kLq9gJDu7p_KyyRr7nNw-z-DyIFJbNUz/360fx360f",
+            "weaponName": "AK-47",
+            "skinName": "AK-47 | Redline",
+            "condition": "Minimal Wear",
+            "avgSold": 1234,
+            "price": "12,34$",
+            "id": 123
+        },
+        {
+            "pictureUrl": "https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5lpKKqPrxN7LEm1Rd6dd2j6eQ9N2t2wK3-ENsZ23wcIKRdQE2NwyD_FK_kLq9gJDu7p_KyyRr7nNw-z-DyIFJbNUz/360fx360f",
+            "weaponName": "AK-47",
+            "skinName": "AK-47 | Redline",
+            "condition": "Minimal Wear",
+            "avgSold": 1234,
+            "price": "12,34$",
+            "id": 123
+        }
+    ]
+}
