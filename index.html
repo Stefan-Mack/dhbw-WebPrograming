@@ -80,12 +80,10 @@
                     picture
                 </div>
                 <div class="col-1">
-                    Name
+                    name
                 </div>
                 <div class="col-3">
-                    Skin
-                </div>
-                <div class="col-1">
+                    skin
                 </div>
                 <div class="col-1">
                     type
@@ -93,8 +91,8 @@
                 <div class="col-2">
                     rarity class
                 </div>
-                <div class="col-1">
-                    Price
+                <div class="col-2">
+                    collection
                 </div>
                 <div class="col-1">
                     Details
@@ -102,11 +100,10 @@
             </div>
         </div>
         <div class="text-center mt-2 mb-4">
-            <button type="button" class="btn btn-dark" onclick="previousPage()">Zurück</button>
-            <input type="number" disabled id="currentSiteNumber">
-            <button type="button" class="btn btn-dark" onclick="nextPage()">Nächstes</button>
+            <button type="button" class="btn btn-dark" onclick="updatePage(-1)">Zurück</button>
+            <input type="number" id="currentSiteNumber" readonly>
+            <button type="button" class="btn btn-dark" onclick="updatePage(+1)">Nächstes</button>
         </div>
-        <!-- TODO: Button to control pages -->
     </section>
 
 
