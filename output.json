@@ -1,412 +1,698 @@
 [
     {
-        "id": "00706590-f442-441d-b653-ef683a0306bf",
-        "markethashname": "G3SG1 | Jungle Dashed (Well-Worn)",
-        "marketname": "G3SG1 | Jungle Dashed (Well-Worn)",
-        "slug": "g3sg1-jungle-dashed-well-worn",
-        "color": "b0c3d9",
-        "bordercolor": "#d2d2d2",
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-14 07:43:08",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.36,
-        "pricesafe": 0,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 7260,
-        "sold24h": 609,
-        "sold7d": 2766,
-        "sold30d": 11285,
-        "sold90d": 57513,
-        "wear": "ww",
-        "itemgroup": "sniper rifle",
-        "itemtype": "g3sg1",
-        "itemname": "jungle dashed",
-        "rarity": "consumer grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 10:02:55",
-        "itemimage": "https:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposem2LFZfwOP3ZTxS6eOlnI-Zg8j-JrXWmm5u5cB1g_zMu46m3Qy2-RBqYG-lIY6SdVI7ZVHT-la8xuvn0MPttJSby3pqvyIg5XfD30vgSYELDI8"
+        "id": "skin-65604",
+        "name": "Desert Eagle | Stadt-DDPAT",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "hy_ddpat_urb",
+            "name": "Stadt-DDPAT"
+        },
+        "min_float": 0.06,
+        "max_float": 0.8,
+        "rarity": {
+            "id": "rarity_uncommon_weapon",
+            "name": "Industriequalität",
+            "color": "#5e98d9"
+        },
+        "stattrak": false,
+        "souvenir": true,
+        "paint_index": "17",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_2",
+                "name": "Einsatzerprobt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_3",
+                "name": "Abgenutzt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_4",
+                "name": "Kampfspuren"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-overpass",
+                "name": "Kollektion „Overpass“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_overpass.png"
+            }
+        ],
+        "crates": [
+            {
+                "id": "crate-4028",
+                "name": "Souvenirpaket: ESL One Köln 2014 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_esl14_promo_de_overpass.8e84964930bb3bcd01328e9ec9d18246b701d815.png"
+            },
+            {
+                "id": "crate-4037",
+                "name": "Souvenirpaket: DreamHack 2014 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_dhw14_promo_de_overpass.e20120d2211c054e3341ec973e420b2536acdc9e.png"
+            },
+            {
+                "id": "crate-4085",
+                "name": "Souvenirpaket: ESL One Kattowitz 2015 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_eslkatowice2015_promo_de_overpass.f518bda0e34a1a12346009a5d0a1c0acf8a6efd0.png"
+            },
+            {
+                "id": "crate-4135",
+                "name": "Souvenirpaket: ESL One Köln 2015 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_eslcologne2015_promo_de_overpass.cadbf695630fb527e72f6e2df689aa186fc3dba0.png"
+            },
+            {
+                "id": "crate-4180",
+                "name": "Souvenirpaket: DreamHack Klausenburg 2015 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_cluj2015_promo_de_overpass.c1e292eef9daecb7e3a39cd32793909dade27c98.png"
+            },
+            {
+                "id": "crate-4229",
+                "name": "Souvenirpaket: MLG Columbus 2016 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_columbus2016_promo_de_overpass.6ca6faaa7e9bd88599ac9fd566624b82a49253dc.png"
+            },
+            {
+                "id": "crate-4277",
+                "name": "Souvenirpaket: ESL One Köln 2016 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_cologne2016_promo_de_overpass.ae687c6e4b521a9617e982915266157aee4c48bf.png"
+            },
+            {
+                "id": "crate-4347",
+                "name": "Souvenirpaket: Atlanta 2017 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_atlanta2017_promo_de_overpass.59427cdda056ed154d4c29df6417a852f56a7a4b.png"
+            },
+            {
+                "id": "crate-4399",
+                "name": "Souvenirpaket: Krakau 2017 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_krakow2017_promo_de_overpass.e4a6cab0326599c25b29135013c3b22aabe2e8b0.png"
+            },
+            {
+                "id": "crate-4466",
+                "name": "Souvenirpaket: ELEAGUE Boston 2018 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_boston2018_promo_de_overpass.0052a59731a791212ab021d5f6fbf839dbe70b3b.png"
+            },
+            {
+                "id": "crate-4543",
+                "name": "Souvenirpaket: FACEIT London 2018 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_london2018_promo_de_overpass.951ad03c7109ed78658b951deb76bbc7808042a0.png"
+            },
+            {
+                "id": "crate-4593",
+                "name": "Souvenirpaket: IEM Kattowitz 2019 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_katowice2019_promo_de_overpass.cd9bd1317243c478c3a072621e83988b37ab1df1.png"
+            },
+            {
+                "id": "crate-4663",
+                "name": "Souvenirpaket: Berlin 2019 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_berlin2019_promo_de_overpass.002b0661e317dbac2a511b900ac0cf53fb9e2801.png"
+            },
+            {
+                "id": "crate-4812",
+                "name": "Souvenirpaket: Stockholm 2021 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_stockh2021_promo_de_overpass.a1416d178c57d616ece474e36881ac3952a1d865.png"
+            },
+            {
+                "id": "crate-4838",
+                "name": "Souvenirpaket: Antwerpen 2022 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_antwerp2022_promo_de_overpass.b49a0cf31d712111df1f242aba93847c9957625d.png"
+            },
+            {
+                "id": "crate-4863",
+                "name": "Souvenirpaket: Rio 2022 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_rio2022_promo_de_overpass.de315f096687f04c68bd32fdd31ae255d3859ca6.png"
+            },
+            {
+                "id": "crate-4896",
+                "name": "Souvenirpaket: Paris 2023 – Overpass",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_paris2023_promo_de_overpass.caf1a3fa2e5f02388268dbdc6b7ae9957ff3be0e.png"
+            }
+        ],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_hy_ddpat_urb_light.png"
     },
     {
-        "id": "0072120c-6624-44e3-b681-96a9850091e7",
-        "markethashname": "Sealed Graffiti | GGWP (Bazooka Pink)",
-        "marketname": "Sealed Graffiti | GGWP (Bazooka Pink)",
-        "slug": "sealed-graffiti-ggwp-bazooka-pink",
-        "color": "b0c3d9",
-        "bordercolor": null,
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-13 21:06:02",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.03,
-        "pricesafe": 0.01,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 5268,
-        "sold24h": 63,
-        "sold7d": 428,
-        "sold30d": 2739,
-        "sold90d": 14606,
-        "wear": null,
-        "itemgroup": "graffiti",
-        "itemtype": "sealed graffiti",
-        "itemname": "ggwp (bazooka pink)",
-        "rarity": "base grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 09:49:43",
-        "itemimage": "https:\/\/community.cloudflare.steamstatic.com\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdB2ozio1RrlIWFK3UfvMYB8UsvjiMXojflsZalyxSh31CIyHz2GZ-KuFpPsrTzBG0puWyTCa5PG6XKnHaTAtrGbsPPGDdqGGk4rzCE27LQOElFw8CK_AC-zUaOJ2NNgx9itAdqGq0mFZwCxo8e9VKaVK5yyJLM-92tpu3qw"
+        "id": "skin-65684",
+        "name": "Desert Eagle | Großbrand",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "aa_flames",
+            "name": "Großbrand"
+        },
+        "min_float": 0,
+        "max_float": 0.08,
+        "rarity": {
+            "id": "rarity_mythical_weapon",
+            "name": "Limitiert",
+            "color": "#8847ff"
+        },
+        "stattrak": false,
+        "souvenir": false,
+        "paint_index": "37",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-dust",
+                "name": "Kollektion „Dust“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_dust.png"
+            }
+        ],
+        "crates": [],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_aa_flames_light.png"
     },
     {
-        "id": "007bbc6c-509e-424e-9f88-0286e5f4e5c9",
-        "markethashname": "Sealed Graffiti | Jump Shot (Desert Amber)",
-        "marketname": "Sealed Graffiti | Jump Shot (Desert Amber)",
-        "slug": "sealed-graffiti-jump-shot-desert-amber",
-        "color": "b0c3d9",
-        "bordercolor": "#d2d2d2",
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-14 06:25:06",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.03,
-        "pricesafe": 0,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 7636,
-        "sold24h": 165,
-        "sold7d": 601,
-        "sold30d": 4108,
-        "sold90d": 15509,
-        "wear": null,
-        "itemgroup": "graffiti",
-        "itemtype": "sealed graffiti",
-        "itemname": "jump shot (desert amber)",
-        "rarity": "base grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 09:49:43",
-        "itemimage": "https:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdB2ozio1RrlIWFK3UfvMYB8UsvjiMXojflsZalyxSh31CIyHz2GZ-KuFpPsrTzBG0q_eADEvkYDjQYSXaGgY7T7tfZzvY_DClseTAFj7MFOt_EAFSeacM9jIdPpvYOhE53IIVu2u_0UdyEhk6f9BKZAarxm1OMLh9m3IW5tmkpRk"
+        "id": "skin-65696",
+        "name": "Desert Eagle | Nacht",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "so_night",
+            "name": "Nacht"
+        },
+        "min_float": 0.06,
+        "max_float": 0.8,
+        "rarity": {
+            "id": "rarity_uncommon_weapon",
+            "name": "Industriequalität",
+            "color": "#5e98d9"
+        },
+        "stattrak": false,
+        "souvenir": false,
+        "paint_index": "40",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_2",
+                "name": "Einsatzerprobt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_3",
+                "name": "Abgenutzt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_4",
+                "name": "Kampfspuren"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-chopshop",
+                "name": "Kollektion „Chop Shop“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_chopshop.png"
+            }
+        ],
+        "crates": [],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_so_night_light.png"
     },
     {
-        "id": "00b5cdb2-5cab-4d6f-abf2-c5575eed182d",
-        "markethashname": "Sealed Graffiti | X-Axes (Monarch Blue)",
-        "marketname": "Sealed Graffiti | X-Axes (Monarch Blue)",
-        "slug": "sealed-graffiti-x-axes-monarch-blue",
-        "color": "b0c3d9",
-        "bordercolor": "#d2d2d2",
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-14 01:11:08",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.03,
-        "pricesafe": 0,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 6951,
-        "sold24h": 98,
-        "sold7d": 674,
-        "sold30d": 2657,
-        "sold90d": 14480,
-        "wear": null,
-        "itemgroup": "graffiti",
-        "itemtype": "sealed graffiti",
-        "itemname": "x-axes (monarch blue)",
-        "rarity": "base grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 09:49:43",
-        "itemimage": "https:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdB2ozio1RrlIWFK3UfvMYB8UsvjiMXojflsZalyxSh31CIyHz2GZ-KuFpPsrTzBG0oPqID0v0ejjXPCTdUlg_RbNeZ2GK-WGnsb_BQTzIF7t6RQwEfaAN-mBMbs2KPBZv0NMCrjH2h0p6WBUnfspUfRq33n0DPaR4nCRFI8pbgRJDCPA"
+        "id": "skin-65780",
+        "name": "Desert Eagle | Hypnotisch",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "aa_vertigo",
+            "name": "Hypnotisch"
+        },
+        "min_float": 0,
+        "max_float": 0.08,
+        "rarity": {
+            "id": "rarity_legendary_weapon",
+            "name": "Vertraulich",
+            "color": "#d32ce6"
+        },
+        "stattrak": true,
+        "souvenir": false,
+        "paint_index": "61",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-weapons-i",
+                "name": "Kollektion „Arms Deal“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_weapons_i.png"
+            }
+        ],
+        "crates": [
+            {
+                "id": "crate-4001",
+                "name": "Waffenkiste „CS:GO“",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_valve_1.23c783d005b446a1004c97057cfb5ac2d8dae186.png"
+            }
+        ],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_aa_vertigo_light.png"
     },
     {
-        "id": "00ff89a4-41ee-4601-a8d2-927864897607",
-        "markethashname": "Sticker | headtr1ck (Glitter) | Paris 2023",
-        "marketname": "Sticker | headtr1ck (Glitter) | Paris 2023",
-        "slug": "sticker-headtr1ck-glitter-paris-2023",
-        "color": "8847ff",
-        "bordercolor": "d2d2d2",
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-14 04:22:02",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.05,
-        "pricemin": 0.03,
-        "pricemax": 0.04,
-        "pricesafe": 0.01,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 2569,
-        "sold24h": 57,
-        "sold7d": 375,
-        "sold30d": 3338,
-        "sold90d": 29164,
-        "wear": null,
-        "itemgroup": "sticker",
-        "itemtype": "paris 2023",
-        "itemname": "headtr1ck (glitter)",
-        "rarity": "remarkable",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 10:02:44",
-        "itemimage": "https:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRNTV7ZVLb9hZycQFRzGgxSt76xOVZj2MzPfTRW-Nmkq4yKhfDxfe7SxTsAu8AmibzEpYmi31Dg-0tkZWimcYfAcgA4ZF2D-QC2w-_rg5ei_MOe4DYIyrU"
+        "id": "skin-65896",
+        "name": "Desert Eagle | Matschig",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "hy_mottled_sand",
+            "name": "Matschig"
+        },
+        "min_float": 0.06,
+        "max_float": 0.8,
+        "rarity": {
+            "id": "rarity_uncommon_weapon",
+            "name": "Industriequalität",
+            "color": "#5e98d9"
+        },
+        "stattrak": false,
+        "souvenir": true,
+        "paint_index": "90",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_2",
+                "name": "Einsatzerprobt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_3",
+                "name": "Abgenutzt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_4",
+                "name": "Kampfspuren"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-lake",
+                "name": "Kollektion „Lake“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_lake.png"
+            }
+        ],
+        "crates": [
+            {
+                "id": "crate-4006",
+                "name": "Souvenirpaket: DreamHack 2013",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_dhw13_promo.e2fdfaae196be9b45cd67086e99269f61dc0ca8d.png"
+            },
+            {
+                "id": "crate-4013",
+                "name": "Souvenirpaket: EMS One 2014",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_ems14_promo.a2c1d0b7aae61d8bd734d7dd3f391fa42bfee643.png"
+            }
+        ],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_hy_mottled_sand_light.png"
     },
     {
-        "id": "0197d788-e843-4226-aace-cba978a7ff2f",
-        "markethashname": "Sealed Graffiti | Ninja (Dust Brown)",
-        "marketname": "Sealed Graffiti | Ninja (Dust Brown)",
-        "slug": "sealed-graffiti-ninja-dust-brown",
-        "color": "b0c3d9",
-        "bordercolor": null,
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-14 09:48:12",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.03,
-        "pricesafe": 0.01,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 6372,
-        "sold24h": 73,
-        "sold7d": 464,
-        "sold30d": 2962,
-        "sold90d": 14310,
-        "wear": null,
-        "itemgroup": "graffiti",
-        "itemtype": "sealed graffiti",
-        "itemname": "ninja (dust brown)",
-        "rarity": "base grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 09:49:43",
-        "itemimage": "https:\/\/community.cloudflare.steamstatic.com\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdB2ozio1RrlIWFK3UfvMYB8UsvjiMXojflsZalyxSh31CIyHz2GZ-KuFpPsrTzBG0pO-CI3r-Zj3FYSeJGA44TOJfYW7YqjD2sOXHQjrKQO0uRAAHK6tR-mEdPsvbO0Zo3YUVu2u_0UdyEhk6f9BKZAarxm1OabtyzHQWObObMUg"
+        "id": "skin-66276",
+        "name": "Desert Eagle | Goldener Koi",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "am_scales_bravo",
+            "name": "Goldener Koi"
+        },
+        "min_float": 0,
+        "max_float": 0.12,
+        "rarity": {
+            "id": "rarity_ancient_weapon",
+            "name": "Verdeckt",
+            "color": "#eb4b4b"
+        },
+        "stattrak": true,
+        "souvenir": false,
+        "paint_index": "185",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-bravo-i",
+                "name": "Kollektion „Bravo“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_bravo_i.png"
+            }
+        ],
+        "crates": [
+            {
+                "id": "crate-4003",
+                "name": "Waffenkiste „Operation Bravo“",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_operation_ii.5e5104a6291741c5693a1e78bd6ecc9560b51f0a.png"
+            }
+        ],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_am_scales_bravo_light.png"
     },
     {
-        "id": "01b6f218-4242-43c0-8637-d4456fa2e2bd",
-        "markethashname": "Sealed Graffiti | Chess King (War Pig Pink)",
-        "marketname": "Sealed Graffiti | Chess King (War Pig Pink)",
-        "slug": "sealed-graffiti-chess-king-war-pig-pink",
-        "color": "b0c3d9",
-        "bordercolor": null,
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-14 01:11:07",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.03,
-        "pricesafe": 0,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 7029,
-        "sold24h": 52,
-        "sold7d": 598,
-        "sold30d": 2941,
-        "sold90d": 14999,
-        "wear": null,
-        "itemgroup": "graffiti",
-        "itemtype": "sealed graffiti",
-        "itemname": "chess king (war pig pink)",
-        "rarity": "base grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 10:02:54",
-        "itemimage": "https:\/\/community.cloudflare.steamstatic.com\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdB2ozio1RrlIWFK3UfvMYB8UsvjiMXojflsZalyxSh31CIyHz2GZ-KuFpPsrTzBG0ouqID2fIYz7KKG-LGgcxSrIMNjna_GChtOjCFjCfROt5Qw4CLqIN9GFOOZ2AahJu1tYO5XW2kAJ-ERonYMhTfBuy2ngKbLhxyyIWcNOcDuOP"
+        "id": "skin-66460",
+        "name": "Desert Eagle | Kobaltbruch",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "am_ddpatdense_peacock",
+            "name": "Kobaltbruch"
+        },
+        "min_float": 0,
+        "max_float": 0.2,
+        "rarity": {
+            "id": "rarity_legendary_weapon",
+            "name": "Vertraulich",
+            "color": "#d32ce6"
+        },
+        "stattrak": true,
+        "souvenir": false,
+        "paint_index": "231",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_2",
+                "name": "Einsatzerprobt"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-esports-ii",
+                "name": "Kollektion „E-Sport Winter 2013“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_esports_ii.png"
+            }
+        ],
+        "crates": [
+            {
+                "id": "crate-4005",
+                "name": "Waffenkiste „E-Sport Winter 2013“",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_esports_2013_14.a83d1976bb20db8b4a64e7acad93aac87127ddd5.png"
+            }
+        ],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_am_ddpatdense_peacock_light.png"
     },
     {
-        "id": "01f47e94-ae07-408c-8008-7d5628b15645",
-        "markethashname": "Sealed Graffiti | 8-Ball (Tracer Yellow)",
-        "marketname": "Sealed Graffiti | 8-Ball (Tracer Yellow)",
-        "slug": "sealed-graffiti-8-ball-tracer-yellow",
-        "color": "b0c3d9",
-        "bordercolor": null,
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-13 21:06:06",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.03,
-        "pricesafe": 0,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 4249,
-        "sold24h": 152,
-        "sold7d": 707,
-        "sold30d": 3431,
-        "sold90d": 14867,
-        "wear": null,
-        "itemgroup": "graffiti",
-        "itemtype": "sealed graffiti",
-        "itemname": "8-ball (tracer yellow)",
-        "rarity": "base grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 09:49:43",
-        "itemimage": "https:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdB2ozio1RrlIWFK3UfvMYB8UsvjiMXojflsZalyxSh31CIyHz2GZ-KuFpPsrTzBG0qe6yGX3wYCPGLi3VUgluTOVdNDvf_WH05ezFS2nIROp_Fg0CL_cE-jYdOJraPBQ5htQD_zL2h0p6WBUnfspUfRq33n0DPaR4zHURfJ4AQHj9Jwk"
+        "id": "skin-66464",
+        "name": "Desert Eagle | Purpurnes Netz",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "hy_webs_darker",
+            "name": "Purpurnes Netz"
+        },
+        "min_float": 0.06,
+        "max_float": 0.8,
+        "rarity": {
+            "id": "rarity_mythical_weapon",
+            "name": "Limitiert",
+            "color": "#8847ff"
+        },
+        "stattrak": true,
+        "souvenir": false,
+        "paint_index": "232",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_2",
+                "name": "Einsatzerprobt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_3",
+                "name": "Abgenutzt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_4",
+                "name": "Kampfspuren"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-esports-iii",
+                "name": "Kollektion „E-Sport Sommer 2014“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_esports_iii.png"
+            }
+        ],
+        "crates": [
+            {
+                "id": "crate-4019",
+                "name": "Waffenkiste „E-Sport Sommer 2014“",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_esports_2014_summer.e579e3f7ca004fd9b51aa0f597590c936bb9f67c.png"
+            }
+        ],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_hy_webs_darker_light.png"
     },
     {
-        "id": "02044cfe-bf49-4c3d-9fbe-3aa9d95345d6",
-        "markethashname": "Sealed Graffiti | Toasted (Bazooka Pink)",
-        "marketname": "Sealed Graffiti | Toasted (Bazooka Pink)",
-        "slug": "sealed-graffiti-toasted-bazooka-pink",
-        "color": "b0c3d9",
-        "bordercolor": null,
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-14 02:41:01",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.03,
-        "pricesafe": 0,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 10632,
-        "sold24h": 94,
-        "sold7d": 1107,
-        "sold30d": 5531,
-        "sold90d": 26660,
-        "wear": null,
-        "itemgroup": "graffiti",
-        "itemtype": "sealed graffiti",
-        "itemname": "toasted (bazooka pink)",
-        "rarity": "base grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 09:49:44",
-        "itemimage": "https:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdB2ozio1RrlIWFK3UfvMYB8UsvjiMXojflsZalyxSh31CIyHz2GZ-KuFpPsrTzBG0rO2BBTqjOWGReHiLGV9uH7ZbY2ve9zKtsemWRG3BEuotQg9Ve6pX-m1IPMGNIVJjg5FYpGm3hUloEgIhYslfLQ26nCwRY6c2-19r"
-    },
-    {
-        "id": "0227985a-04a4-4a79-a036-f3f4aa0e6d62",
-        "markethashname": "Sticker | apEX | Antwerp 2022",
-        "marketname": "Sticker | apEX | Antwerp 2022",
-        "slug": "sticker-apex-antwerp-2022",
-        "color": "4b69ff",
-        "bordercolor": "d2d2d2",
-        "pricelatest": 0.03,
-        "pricelatestsell": 0.03,
-        "priceupdatedat": "2023-12-14 09:13:06",
-        "pricereal": 0.01,
-        "pricerealcreatedat": "2023-12-14 09:40:01",
-        "winlosspercentage": "66.67",
-        "pricemedian": 0.05,
-        "priceavg": 0.04,
-        "pricemin": 0.03,
-        "pricemax": 0.03,
-        "pricesafe": 0,
-        "pricesafe24h": 0.03,
-        "pricesafe7d": 0.03,
-        "pricesafe30d": 0.03,
-        "pricesafe90d": 0.03,
-        "unstable": 0,
-        "unstablereason": null,
-        "offervolume": 10748,
-        "sold24h": 82,
-        "sold7d": 622,
-        "sold30d": 2998,
-        "sold90d": 11510,
-        "wear": null,
-        "itemgroup": "sticker",
-        "itemtype": "antwerp 2022",
-        "itemname": "apex",
-        "rarity": "high grade",
-        "quality": "normal",
-        "isstattrack": 0,
-        "isstar": 0,
-        "markettradablerestriction": 7,
-        "updatedat": "2023-12-14 10:02:45",
-        "itemimage": "https:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRcQljHQva9hZ-BARJnLANot6qgMzhs0uHPdHNEut_iktWKwfT3ar6Bxj4IuMQj2O_HrImjilLm-xE-Z2v1cICQdA9sfxiOrXAsF9MQ"
-    }    
+        "id": "skin-66484",
+        "name": "Desert Eagle | Städtischer Schutt",
+        "description": "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist.",
+        "weapon": {
+            "id": "weapon_deagle",
+            "name": "Desert Eagle"
+        },
+        "category": {
+            "id": "csgo_inventory_weapon_category_pistols",
+            "name": "Pistolen"
+        },
+        "pattern": {
+            "id": "hy_varicamo_urban",
+            "name": "Städtischer Schutt"
+        },
+        "min_float": 0,
+        "max_float": 0.5,
+        "rarity": {
+            "id": "rarity_rare_weapon",
+            "name": "Militärstandard",
+            "color": "#4b69ff"
+        },
+        "stattrak": false,
+        "souvenir": true,
+        "paint_index": "237",
+        "wears": [
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_0",
+                "name": "Fabrikneu"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_1",
+                "name": "Minimale Gebrauchsspuren"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_2",
+                "name": "Einsatzerprobt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_3",
+                "name": "Abgenutzt"
+            },
+            {
+                "id": "SFUI_InvTooltip_Wear_Amount_4",
+                "name": "Kampfspuren"
+            }
+        ],
+        "collections": [
+            {
+                "id": "collection-set-train",
+                "name": "Kollektion „Train“",
+                "image": "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/econ/set_icons/set_train.png"
+            }
+        ],
+        "crates": [
+            {
+                "id": "crate-4006",
+                "name": "Souvenirpaket: DreamHack 2013",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_dhw13_promo.e2fdfaae196be9b45cd67086e99269f61dc0ca8d.png"
+            },
+            {
+                "id": "crate-4013",
+                "name": "Souvenirpaket: EMS One 2014",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_ems14_promo.a2c1d0b7aae61d8bd734d7dd3f391fa42bfee643.png"
+            },
+            {
+                "id": "crate-4137",
+                "name": "Souvenirpaket: ESL One Köln 2015 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_eslcologne2015_promo_de_train.a7f35dc2af6523bae268f2d289f8e2401cc93418.png"
+            },
+            {
+                "id": "crate-4182",
+                "name": "Souvenirpaket: DreamHack Klausenburg 2015 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_cluj2015_promo_de_train.0d90a1abb8c5a7a925c964993fbe5fc491dbef7f.png"
+            },
+            {
+                "id": "crate-4231",
+                "name": "Souvenirpaket: MLG Columbus 2016 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_columbus2016_promo_de_train.8e6d7a5c7031a0f374d5671ef2c3430521443813.png"
+            },
+            {
+                "id": "crate-4279",
+                "name": "Souvenirpaket: ESL One Köln 2016 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_cologne2016_promo_de_train.9d07311ba0f80e6f9765fc0ce4e2198ed46d3c62.png"
+            },
+            {
+                "id": "crate-4349",
+                "name": "Souvenirpaket: Atlanta 2017 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_atlanta2017_promo_de_train.094d87e1e59c1186ce31cc361215e93dbac5d68d.png"
+            },
+            {
+                "id": "crate-4401",
+                "name": "Souvenirpaket: Krakau 2017 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_krakow2017_promo_de_train.218a403b03c551d7b4b33e9a921f705710959c4d.png"
+            },
+            {
+                "id": "crate-4468",
+                "name": "Souvenirpaket: ELEAGUE Boston 2018 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_boston2018_promo_de_train.43b502d91d47c530d5f2dc028c31ba42ec509b6f.png"
+            },
+            {
+                "id": "crate-4545",
+                "name": "Souvenirpaket: FACEIT London 2018 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_london2018_promo_de_train.b4d9de3fe319af138e2406a878ac4618dabee907.png"
+            },
+            {
+                "id": "crate-4595",
+                "name": "Souvenirpaket: IEM Kattowitz 2019 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_katowice2019_promo_de_train.7cea24a20f8bd7e630a8c13bd7f932ec3f2cbb01.png"
+            },
+            {
+                "id": "crate-4664",
+                "name": "Souvenirpaket: Berlin 2019 – Train",
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_berlin2019_promo_de_train.ad635359a453056a3e8da96bbc1cf4dac74d3387.png"
+            }
+        ],
+        "team": {
+            "id": "both",
+            "name": "Beide Teams"
+        },
+        "image": "https://raw.githubusercontent.com/ByMykel/CSGO-API/efe25483a04a03414dea9c61d4b0e958a373cdfd/public/images/econ/default_generated/weapon_deagle_hy_varicamo_urban_light.png"
+    }
 ]

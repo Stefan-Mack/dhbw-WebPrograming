@@ -1,64 +1,75 @@
 // TODO
 // start fetching json, when html-website is fully loaded  https://www.steamwebapi.com/steam/api/items?key=TRGUYRPZZGZX8EA8&page=1&max=10
 window.onload = function () {
-    initJson()
+    initJson();
 }
 
 function initJson(pageNumber = 1) {
-    fetch("APIKey.json")
+
+    fetch(`https://bymykel.github.io/CSGO-API/api/de/skins.json`)
         .then(res => res.json())
         .then(data => {
-            fetch(`https://www.steamwebapi.com/steam/api/items?key=${data.personalApiKey}=${pageNumber}&max=10`) // pageNumber
-                .then(res => res.json())
-                .then(data => {
-                    jsonValueMapping(data, pageNumber);
-                });
-        })
+            jsonValueMapping(data, pageNumber);
+        });
 }
 
 function jsonValueMapping(initilaziedJson, pageNumber) {
     console.log(initilaziedJson)
     console.log(initilaziedJson[1].length)
     let contentContainer = document.getElementById("api-content")
-    contentContainer.innerHTML = "" // clear all inside, especially when next page is generated 
-    for (let i = 0; i < initilaziedJson.length; i++) {
+    contentContainer.innerHTML = getTableHeader() // clear data and set Header when next page is generated 
+    for (let i = (0 + pageNumber * 10 - 10); i < ((pageNumber * 10 < initilaziedJson.length) ? pageNumber * 10 : initilaziedJson.length); i++) {
         let tempRow = entryConstructor(
-            initilaziedJson[i].itemimage,
-            initilaziedJson[i].itemtype,
-            initilaziedJson[i].marketname,
-            initilaziedJson[i].wear,
-            initilaziedJson[i].offervolume,
+            initilaziedJson[i].image,
+            initilaziedJson[i].weapon.name,
+            initilaziedJson[i].name,
+            initilaziedJson[i].category.name,
+            initilaziedJson[i].rarity.name,
             initilaziedJson[i].pricelatest,
             initilaziedJson[i].detailUrl,
-            initilaziedJson[i].rarity
+            initilaziedJson[i].rarity.color
         );
         contentContainer.appendChild(tempRow);
     }
     let pageDisplay = document.getElementById("currentSiteNumber");
-    pageDisplay.setAttribute("placeholder", pageNumber)
-    console.log(contentContainer)
+    pageDisplay.setAttribute("placeholder", pageNumber);
+    console.log(contentContainer);
 }
 
 function previousPage() {
-    let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder")
-    currentPage = parseInt(currentPage)
+    let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder");
+    currentPage = inputValidation(currentPage);
+    console.log(currentPage);
     if (currentPage != 1) {
         initJson(currentPage - 1)
     }
 }
 
 function nextPage() {
-    let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder")
-    currentPage = parseInt(currentPage)
+    let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder");
+    currentPage = inputValidation(currentPage);;
     initJson(currentPage + 1)
 }
 
+function inputValidation(input) {
+    try {
+        input = parseInt(input);
+        if(Math.abs(input) != input) {
+            throw new Error("nur positive Zahlen eingeben");
+        }
+        return input
+    }
+    catch(err) {
+        alert("Bitte nur positive Zahlen eingeben");
+    }
+}
 
-function entryConstructor(pictureUrl, weaponName, skinName, wear, avgSold, price, detailUrl, rarity) { // detailUrl oder Id
+
+function entryConstructor(pictureUrl, weaponName, skinName, category, rarityClass, price, detailUrl, rarityColor) { // detailUrl oder Id
 
     // creating rows, that can be filled later with data
     let row = document.createElement("div");
-    row.setAttribute("class", "row border-top border-light border-");
+    row.setAttribute("class", "row border-top border-light border-2");
 
     // creating all elements one by one 
     // starting with the first column the picture of the skin/weapon
@@ -67,14 +78,14 @@ function entryConstructor(pictureUrl, weaponName, skinName, wear, avgSold, price
     pictureImg.setAttribute("alt", `picture of the weapon ${weaponName} with the Skin ${skinName}`);
     pictureImg.setAttribute("height", "auto");
     pictureImg.setAttribute("width", "100%");
-    pictureImg.setAttribute("class", rarity)
+    pictureImg.setAttribute("style", `border: 3px solid ${rarityColor}`)
     let pictureDiv = document.createElement("div");
     pictureDiv.setAttribute("class", "col-1");
     pictureDiv.appendChild(pictureImg);
 
     // 2nd column is the weapon name
     let nameDiv = document.createElement("div");
-    nameDiv.setAttribute("class", "col-1");
+    nameDiv.setAttribute("class", "col-2");
     nameDiv.innerHTML = `<h6>${weaponName}</h6>`
 
     // 3rd column is the skin name
@@ -84,17 +95,17 @@ function entryConstructor(pictureUrl, weaponName, skinName, wear, avgSold, price
 
     // 4th column is the space between skin name and the float
     let spaceDiv = document.createElement("div");
-    spaceDiv.setAttribute("class", "col-3");
+    spaceDiv.setAttribute("class", "col-1");
 
     // 5th column is the skin condition
-    let wearDiv = document.createElement("div");
-    wearDiv.setAttribute("class", "col-1");
-    wearDiv.innerHTML = `<h6>${wear}</h6>`
+    let categoryDiv = document.createElement("div");
+    categoryDiv.setAttribute("class", "col-1");
+    categoryDiv.innerHTML = `<h6>${category}</h6>`
 
     // 6th column is the skin condition
-    let offerVolDiv = document.createElement("div");
-    offerVolDiv.setAttribute("class", "col-1");
-    offerVolDiv.innerHTML = `<h6>${avgSold} St</h6>`
+    let rarityClassDiv = document.createElement("div");
+    rarityClassDiv.setAttribute("class", "col-2");
+    rarityClassDiv.innerHTML = `<h6>${rarityClass}</h6>`
 
     // 7th column is the skin condition
     let priceDiv = document.createElement("div");
@@ -112,8 +123,8 @@ function entryConstructor(pictureUrl, weaponName, skinName, wear, avgSold, price
     row.appendChild(nameDiv);
     row.appendChild(skinDiv);
     row.appendChild(spaceDiv);
-    row.appendChild(wearDiv);
-    row.appendChild(offerVolDiv);
+    row.appendChild(categoryDiv);
+    row.appendChild(rarityClassDiv);
     row.appendChild(priceDiv);
     row.appendChild(detailsDiv);
 
@@ -121,4 +132,9 @@ function entryConstructor(pictureUrl, weaponName, skinName, wear, avgSold, price
 
 
     // TODO: refactormöglichkeit create element set attribute zusammenfassen
+}
+
+function getTableHeader() {
+    let tempHeader = '<div class="row"><div class="col-1">picture</div><div class="col-2">Name</div><div class="col-3">Skin</div><div class="col-1"></div><div class="col-1">type</div><div class="col-2">rarity class</div><div class="col-1">Price</div><div class="col-1">Details</div></div>'
+    return tempHeader
 }
