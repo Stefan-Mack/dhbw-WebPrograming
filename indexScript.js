@@ -22,7 +22,7 @@ function jsonValueMapping(initilaziedJson, pageNumber) {
             initilaziedJson[i].name,
             initilaziedJson[i].category.name,
             initilaziedJson[i].rarity.name,
-            initilaziedJson[i].collections[0].name, // skins only have on collection. The api models the collection as a list, even there is only one entry.
+            initilaziedJson[i].collections.length == 0 ? "Hat keine Kollektion" : initilaziedJson[i].collections[0].name, // skins only have on collection. The api models the collection as a list, even there is only one entry.
             initilaziedJson[i].id,
             initilaziedJson[i].rarity.color
         );
@@ -104,7 +104,7 @@ function entryConstructor(pictureUrl, weaponName, skinName, category, rarityClas
     // 7th column is the url with the individual id of the element
     let detailsDiv = document.createElement("div");
     detailsDiv.setAttribute("class", "col-1");
-    detailsDiv.innerHTML = `<a src="${detailUrl}">Details</a>`;
+    detailsDiv.innerHTML = `<a href="/details.html?id=${detailUrl}">Details</a>`;
 
 
     // now all elements get attached to the row

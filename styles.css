@@ -3,9 +3,10 @@
     height: auto;
 }
 
-#footer {
-    position: relative;
+#footer::after {
+    position: absolute;
     bottom: 0;
+    height: 120px;
 }
 
 #currentSiteNumber {
@@ -14,3 +15,13 @@
     text-align: center;
     vertical-align: middle;
 }
+
+
+/* 
+
+[]    TODO: search
+[]    TODO: detailssite
+[]    TODO: responsive 
+[]    TODO: navbar
+
+*/
