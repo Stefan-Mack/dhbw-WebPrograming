@@ -11,6 +11,8 @@ function initJson(pageNumber = 1) {
         });
 }
 
+
+// json mapping
 function jsonValueMapping(initilaziedJson, pageNumber) {
     // generating the table for the page with looping over 10 elements
     let contentContainer = document.getElementById("api-content")
@@ -32,6 +34,8 @@ function jsonValueMapping(initilaziedJson, pageNumber) {
     pageDisplay.setAttribute("placeholder", pageNumber);
 }
 
+
+// buttons
 function updatePage(pageChange = 0) {
     let currentPage = document.getElementById("currentSiteNumber").getAttribute("placeholder");
     currentPage = inputValidation(currentPage); 
@@ -41,7 +45,6 @@ function updatePage(pageChange = 0) {
     }
     initJson(newPage); // reloading the json with the new page
 }
-
 
 function inputValidation(input) {
     // validation, if the input is a positiv number 
@@ -58,6 +61,7 @@ function inputValidation(input) {
 }
 
 
+// generator
 function entryConstructor(pictureUrl, weaponName, skinName, category, rarityClass, collection, detailUrl, rarityColor) { // detailUrl oder Id
     // row constructor for the current iteration
     // creating rows, that can be filled later with data
