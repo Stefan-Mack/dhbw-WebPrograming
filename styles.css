@@ -16,6 +16,10 @@
     vertical-align: middle;
 }
 
+.detail-headline {
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 /* 
 

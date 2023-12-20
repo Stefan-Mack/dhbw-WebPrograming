@@ -40,52 +40,56 @@
 
     <!-- api-details-section -->
     <section>
-        <div class="container text-white">
-            <h3 id="detail-name"></h3>
-            <div class="row">
-                <div class="col-8">
+        <div class="container text-white mt-5 mb-3">
+            <h3 id="detail-name" class="mb-3"></h3>
+            <div class="row border-top border-3 border-dark">
+                <div class="col-9">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-8" id="detail-description">Description</div>
-                            <div class="col-4" id="detail-collection">Collection</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8" >
-                                <h5 class="detail-headline">min flow</h5>
+                        <div class="row mt-4">
+                            <div class="col-8">
+                                <h4 class="detail-headline">Beschreibung</h4>
+                                <h5 id="detail-description"></h5>
+                            </div>
+                            <div class="col-4">
+                                <h4 class="detail-headline">min float</h4>
                                 <h5 id="detail-min-flow"></h5>
                             </div>
-                            <div class="col-4" >
-                                <h5 class="detail-headline">max flow</h5>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-8">
+                                <h4 class="detail-headline">Kollektion</h4>
+                                <h5 id="detail-collection"></h5>
+                            </div>
+                            <div class="col-4">
+                                <h4 class="detail-headline">max float</h4>
                                 <h5 id="detail-max-flow"></h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <img src="#" id="detail-picture">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4" id="detail-stattrak-souvenir">stattrak or souvenir</div>
-                <div class="col-4" id="">a</div>
-                <div class="col-4" id="detail-crates">Crates</div>
+            <div class="row text-center mt-4 pt-3 border-top border-3 border-dark">
+                <div class="col-6" id="detail-stattrak-souvenir">
+                    <h4 class="detail-headline">stattrak/souvenir</h4>
+                    <h5 id="detail-stat-souv"></h5>
+
+                    <h4 class="detail-headline mt-5">Waffe</h4>
+                    <div id="detail-weapon-div"></div>
+
+                </div>
+                <div class="col-6" id="detail-crates">
+                    <h4 class="detail-headline">Kisten</h4>
+                    <div id="detail-crate-div"></div>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <section>
-        <div class="text-center mt-2 mb-4">
-            <button type="button" class="btn btn-dark" onclick="updatePage(-1)">Zurück</button>
-            <input type="number" id="currentSiteNumber" readonly>
-            <button type="button" class="btn btn-dark" onclick="updatePage(+1)">Nächstes</button>
-        </div> 
-        <!-- next id? -->
-    </section>
-
-
     <!-- Footersection TODO -->
-    <div class="container-fluid bg-dark" id="footer">
+    <div class="container-fluid bg-dark mt-5" id="footer">
         <footer class="py-1 mt-2">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
