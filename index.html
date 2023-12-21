@@ -12,111 +12,104 @@
 </head>
 
 <body class="bg-black">
+    <div class="wrapper">
+        <div class="content">
+            <!-- Navigationbar TODO -->
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="index.html">CS SkinAPI</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-    <!-- Navigationbar TODO -->
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white" href="index.html">CS SkinAPI</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
-                    </li>
+
+            <!-- Welcome-section -->
+            <section class="border-bottom border-2 border-dark">
+                <div class="container text-center text-white">
+                    <div class="row mt-5">
+                        <div class="col">
+                            <h1>Willkommen</h1>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-2">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Steam</h3>
+                            <p>Steam ist eine Spieleplattform von Valve, auf der es von Shooter über Rollenspiele bis
+                                Simulationen alles an Games gibt. Die benutzte API kann Daten zu allen Skins im Spiel
+                                liefern</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Counter Strike</h3>
+                            <p>Counter Strike ist ein Shooter auf Steam. Das Spiel beinhaltet Waffenskins, die auf dem
+                                Steam
+                                Market in großer Menge gehandelt werden.</p>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <h3>Ziel</h3>
+                            <p>Die Webseite soll diese Skins per API abrufen, um eine Oberfläche zu liefern, auf der man
+                                sich alle Skins anschauen kann</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- API-content -->
+            <section>
+                <h2 class="text-center mt-3 text-white">Steam Market</h2>
+                <div class="container text-center text-white border border-3 border-dark mt-3 bg-black"
+                    id="api-content">
+
+
+                    <div class="row">
+                        <div class="col-sm-2 col-lg-1 d-none d-sm-block">picture</div>
+                        <div class="col-lg-2 d-none d-lg-block">name</div>
+                        <div class="col-sm-5 col-md-4 col-lg-3 d-none d-sm-block">skin</div>
+                        <div class="col-sm-2 col-lg-1 d-none d-md-block">type</div>
+                        <div class="col-lg-2 d-none d-lg-block">rarity class</div>
+                        <div class="col-sm-3 col-lg-2 d-none d-sm-block">collection</div>
+                        <div class="col-sm-1 col-lg-1 d-none d-sm-block">Details</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4 text-center mt-2 mb-4">
+                            <button type="button" class="btn btn-dark" onclick="updatePage(-1)">Zurück</button>
+                            <input type="number" id="currentSiteNumber" readonly>
+                            <button type="button" class="btn btn-dark" onclick="updatePage(+1)">Nächstes</button>
+                        </div>
+                        <div class="col-4 text-center mt-2 mb-4">
+                            <button type="button" class="btn btn-dark" onclick="updatePage()">Reset search</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- Footersection TODO -->
+        <div class="container-fluid bg-dark" id="footer">
+            <footer class="py-1 mt-2">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
                 </ul>
-            </div>
+                <p class="text-center text-white">Stefan Mack (WI22A3)</p>
+            </footer>
         </div>
-    </nav>
 
-
-    <!-- Welcome-section -->
-    <section class="border-bottom border-2 border-dark">
-        <div class="container text-center text-white">
-            <div class="row mt-5">
-                <div class="col">
-                    <h1>Willkommen</h1>
-                </div>
-            </div>
-            <div class="row mt-4 mb-2">
-                <div class="col">
-                    <h3>Steam</h3>
-                    <p>Steam ist eine Spieleplattform von Valve, auf der es von Shooter über Rollenspiele bis
-                        Simulationen alles an Games gibt. Die benutzte API kann Daten zu allen Skins im Spiel liefern</p>
-                </div>
-                <div class="col">
-                    <h3>Counter Strike</h3>
-                    <p>Counter Strike ist ein Shooter auf Steam. Das Spiel beinhaltet Waffenskins, die auf dem Steam
-                        Market in großer Menge gehandelt werden.</p>
-                </div>
-                <div class="col">
-                    <h3>Ziel</h3>
-                    <p>Die Webseite soll diese Skins per API abrufen, um eine Oberfläche zu liefern, auf der man sich alle Skins anschauen kann</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- API-content -->
-    <section>
-        <h2 class="text-center mt-3 text-white">Steam Market</h2>
-        <div class="container text-center text-white border border-3 border-dark mt-3 bg-black" id="api-content">
-
-
-            <div class="row">
-                <div class="col-1">
-                    picture
-                </div>
-                <div class="col-1">
-                    name
-                </div>
-                <div class="col-3">
-                    skin
-                </div>
-                <div class="col-1">
-                    type
-                </div>
-                <div class="col-2">
-                    rarity class
-                </div>
-                <div class="col-2">
-                    collection
-                </div>
-                <div class="col-1">
-                    Details
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4 text-center mt-2 mb-4">
-                    <button type="button" class="btn btn-dark" onclick="updatePage(-1)">Zurück</button>
-                    <input type="number" id="currentSiteNumber" readonly>
-                    <button type="button" class="btn btn-dark" onclick="updatePage(+1)">Nächstes</button>
-                </div>
-                <div class="col-4 text-center mt-2 mb-4">
-                    <button type="button" class="btn btn-dark" onclick="updatePage()">Reset search</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Footersection TODO -->
-    <div class="container-fluid bg-dark" id="footer">
-        <footer class="py-1 mt-2">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
-            </ul>
-            <p class="text-center text-white">Stefan Mack (WI22A3)</p>
-        </footer>
     </div>
-
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -77,37 +77,37 @@ function entryConstructor(pictureUrl, weaponName, skinName, category, rarityClas
     pictureImg.setAttribute("width", "100%");
     pictureImg.setAttribute("style", `border: 3px solid ${rarityColor}`);
     let pictureDiv = document.createElement("div");
-    pictureDiv.setAttribute("class", "col-1");
+    pictureDiv.setAttribute("class", "col-sm-2 col-lg-1");                   // asdfasdfasdfasdfasdf     +1
     pictureDiv.appendChild(pictureImg);
 
     // 2nd column is the weapon name
     let nameDiv = document.createElement("div");
-    nameDiv.setAttribute("class", "col-2");
+    nameDiv.setAttribute("class", "col-lg-2 d-none d-lg-block");              // asdfasdfasdfasdfasdf     faellt raus +2
     nameDiv.innerHTML = `<h6>${weaponName}</h6>`;
 
     // 3rd column is the skin name
     let skinDiv = document.createElement("div");
-    skinDiv.setAttribute("class", "col-3");
+    skinDiv.setAttribute("class", "col-sm-5 col-md-4 col-lg-3");              // asdfasdfasdfasdfasdf     +1
     skinDiv.innerHTML = `<h6>${skinName}</h6>`;
 
     // 4th column is the weapon category
     let categoryDiv = document.createElement("div");
-    categoryDiv.setAttribute("class", "col-1");
+    categoryDiv.setAttribute("class", "col-sm-2 col-lg-1 d-none d-md-block");          // asdfasdfasdfasdfasdf     +1 / +0
     categoryDiv.innerHTML = `<h6>${category}</h6>`;
 
     // 5th column is the skin rarity class
     let rarityClassDiv = document.createElement("div");
-    rarityClassDiv.setAttribute("class", "col-2");
+    rarityClassDiv.setAttribute("class", "col-lg-2 d-none d-lg-block");       // asdfasdfasdfasdfasdf     faellt raus +2
     rarityClassDiv.innerHTML = `<h6>${rarityClass}</h6>`;
 
     // 6th column is the skin collection of the current skin
     let collectionDiv = document.createElement("div");
-    collectionDiv.setAttribute("class", "col-2");
+    collectionDiv.setAttribute("class", "col-sm-3 col-lg-2");        // asdfasdfasdfasdfasdf     +1 / +2
     collectionDiv.innerHTML = `<h6>${collection}</h6>`;
 
     // 7th column is the url with the individual id of the element
     let detailsDiv = document.createElement("div");
-    detailsDiv.setAttribute("class", "col-1");
+    detailsDiv.setAttribute("class", "col-sm-1 col-lg-1");           // asdfasdfasdfasdfasdf
     detailsDiv.innerHTML = `<a href="/details.html?id=${detailUrl}">Details</a>`;
 
 
@@ -128,5 +128,5 @@ function entryConstructor(pictureUrl, weaponName, skinName, category, rarityClas
 
 function getTableHeader() {
     // fill the table header, when loading the next page, because the whole table gets cleared
-    return '<div class="row"><div class="col-1">picture</div><div class="col-2">name</div><div class="col-3">skin</div><div class="col-1">type</div><div class="col-2">rarity class</div><div class="col-1">collection</div><div class="col-1">Details</div></div>';
+    return '<div class="row"><div class="col-sm-2 col-lg-1 d-none d-sm-block">picture</div><div class="col-lg-2 d-none d-lg-block">name</div><div class="col-sm-5 col-md-4 col-lg-3 d-none d-sm-block">skin</div><div class="col-sm-2 col-lg-1 d-none d-md-block">type</div><div class="col-lg-2 d-none d-lg-block">rarity class</div><div class="col-sm-3 col-lg-2 d-none d-sm-block">collection</div><div class="col-sm-1 col-lg-1 d-none d-sm-block">Details</div></div>';
 }

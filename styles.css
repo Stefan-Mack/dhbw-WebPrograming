@@ -1,3 +1,18 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex-grow: 1;
+}
+
 .apiPicture {
     width: 100%;
     height: auto;
@@ -21,12 +36,12 @@
     font-weight: bold;
 }
 
+
 /* 
 
-[]    TODO: search
 [x]   TODO: detailssite
 []    TODO: responsive 
 [x]   TODO: navbar
-[]    TODO: footer
+[x]   TODO: footer
 
 */
