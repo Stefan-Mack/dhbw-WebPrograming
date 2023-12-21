@@ -26,8 +26,8 @@ function jsonValueMappingDetails(initilaziedJson) {
 
     let imgElement = document.getElementById("detail-picture");
     imgElement.setAttribute("src", initilaziedJson.image);
-    imgElement.setAttribute("height", "100%");
-    imgElement.setAttribute("width", "auto");
+    imgElement.setAttribute("height", "auto");
+    imgElement.setAttribute("width", "100%");
     imgElement.setAttribute("style", `border: 5px solid ${initilaziedJson.rarity.color}`)
 
     // row 1
