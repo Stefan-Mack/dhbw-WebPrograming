@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Info zur Webseite</title>
+</head>
+
+<body class="bg-black">
+    <div class="wrapper">
+        <div class="content">
+
+            <!-- Navigationbar -->
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="index.html">CS SkinAPI</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link active text-white" aria-current="page" href="info.html">Info</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="text-center text-white">
+                <h1 class="mt-5">Infos zur Webseite</h1>
+                <div class="container mt-5 mb-3">
+                   <div class="row">
+                        <div class="col-12 col-lg-4 bg-dark border-2 border-black border-top">
+                            <h2>API</h2>
+                            <p>Für die Webseite wurde eine Community <a href="https://bymykel.github.io/CSGO-API/">API</a> von <a href="https://github.com/ByMykel">ByMykel</a> verwendet. Die zwei API-Calls die hier verwendet wurden sind:</p>
+                            <ul>
+                                <li><a href="https://bymykel.github.io/CSGO-API/api/de/skins.json">https://bymykel.github.io/CSGO-API/api/de/skins.json</a> für die Startseite</li>
+                                <li><a href="https://cs2-api.vercel.app/api/items?id=skin-65604">https://cs2-api.vercel.app/api/items?id=${urlId}</a> für die individuellen Items </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 bg-dark border-2 border-start border-end border-black border-top">
+                            <h2>Probleme</h2>
+                            <p>Die API brachte auch verschiedene Herausforderungen mit sich. So gab es zwei verschiedene Versionen mit unterschiedlichen Datenstrukturen.
+                                Da sich die erste API mehr auf Skins fokussiert und die 2. auf alle Ingame-Items, habe ich mich bei der Startseite auf diese fokussiert.
+                                Die IDs sind jeweils gleich auf beiden APIs, deshalb wurde für die Details die neuere verwendet. Eine Suchfunktion brachte die neue API auch mit,
+                                aber war wegen der Datenstruktur nicht
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 bg-dark border-2 border-black border-top">
+                            <h2>Warum diese API?</h2>
+                            <p>Da ich am gamen interessiert bin, sollte es in diese Richtung gehen. Die suche nach einer entsprechenden API so zwar auf den ersten Blick ziemlich einfach aus. 
+                                Es kam viel aus der Community, aber diese waren dann doch sehr beschränkt in ihrere Nutzung. Für viele musste man etwas da lassen, andere waren nicht nutzbar, 
+                                da diese nicht CORS zugelassen haben. Da änderte sich dann die API im Laufe der Entwicklung mehrmals.</p>
+                        </div>
+                   </div>
+                   <div class="row mt-5">
+                    <div class="col-12 col-md-6">
+                        <h3>alte CSGO API</h3>
+                        <img src="csgoapi.png" class="infoBilder" alt="Bild von der CSGO API (alt)">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>neue CS2 API</h3>
+                        <img src="cs2api.png" class="infoBilder" alt="Bild von der CS2 API (neu)">
+                    </div>
+                   </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footersection -->
+        <div class="container-fluid bg-dark mt-5" id="footer">
+            <footer class="py-1 mt-2">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+                    <li class="nav-item"><a href="info.html" class="nav-link px-2 text-white">Info</a></li>
+                </ul>
+                <p class="text-center text-white">Stefan Mack (WI22A3)</p>
+            </footer>
+        </div>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
